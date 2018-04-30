@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import * as highcharts from 'highcharts';
 
 @Injectable()
 export class HighchartsStatic {
@@ -10,7 +11,7 @@ export class HighchartsService {
     _highchartsStatice: HighchartsStatic
 
     constructor() {
-        this._highchartsStatice = require('highcharts');
+        this._highchartsStatice = highcharts;
     }
 
     getHighchartsStatic() {
